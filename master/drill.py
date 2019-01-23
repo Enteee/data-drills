@@ -18,6 +18,6 @@ class Drill(object, metaclass=abc.ABCMeta):
     def drill(self, line):
         """
         Does the actual data mining.
-        @return a list of values mined (must all values must implement __str__)
+        @return a list of values mined (all values must implement __str__)
         """
         pass

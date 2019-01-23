@@ -22,7 +22,7 @@ LOG_FORMAT = '%(asctime)-15s %(message)s'
 DEFAULT_LOG_LEVEL = logging.WARNING
 READ_CHUNKS = 100000
 
-parser = argparse.ArgumentParser(description="Password data miner")
+parser = argparse.ArgumentParser(description="Data drills")
 parser.add_argument("files", metavar="file", type=str, nargs="*", help="input data", default=[])
 parser.add_argument('--verbose', '-v', action='count')
 parser.add_argument('--strict', '-s', action='store_true', help="forces strict codec parsing")
