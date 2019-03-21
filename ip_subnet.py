@@ -17,7 +17,7 @@ LOG_FORMAT = '%(asctime)-15s %(message)s'
 DEFAULT_LOG_LEVEL = logging.WARNING
 READ_CHUNKS = 100000
 
-parser = argparse.ArgumentParser(description="Network mapper")
+parser = argparse.ArgumentParser(description="Maps Ip addresses to their corresponding subnet")
 parser.add_argument('network_file', metavar='network_file', type=str, nargs=1, help='file defining networks')
 parser.add_argument('files', metavar='file', type=str, nargs='*', help='input data', default=[])
 parser.add_argument('--verbose', '-v', action='count')
